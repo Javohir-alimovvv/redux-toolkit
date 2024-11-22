@@ -1,0 +1,137 @@
+.user__components {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+
+    .user__card {
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+        .user__card__image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 28px;
+        }
+
+        .user__card__title {
+            font-size: 24px;
+            color: dodgerblue;
+            margin-bottom: 16px;
+        }
+
+        .user__card__text {
+            font-size: 18px;
+            color: black;
+            margin-bottom: 16px;
+        }
+
+        .user__card__age {
+            font-size: 18px;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .user__card__btn__box {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .user__card__btn {
+                width: auto;
+                height: 38px;
+                color: white;
+                border-radius: 5px;
+                border: 1px solid transparent;
+                transition: .3s;
+                font-size: 16px;
+                font-weight: 700;
+                background: red;
+                padding: 0px 10px;
+
+                &:hover {
+                    background: none;
+                    color: red;
+                    border-color: red;
+                    transition: .3s;
+                }
+            }
+
+            .user__card__btn__two {
+                width: auto;
+                height: 38px;
+                color: white;
+                border-radius: 5px;
+                border: 1px solid transparent;
+                transition: .3s;
+                font-size: 16px;
+                font-weight: 700;
+                background: gold;
+                padding: 0px 10px;
+
+                &:hover {
+                    background: none;
+                    color: gold;
+                    border-color: gold;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+
+    .modal__collection {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 16px;
+        padding-top: 10px;
+    }
+
+    .modal__collection input {
+        width: 350px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid #686666;
+        outline: none;
+        padding: 0px 16px;
+        font-size: 16px;
+        color: #414040;
+    }
+
+    .modal__collection select {
+        width: 350px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid #686666;
+        outline: none;
+        padding: 0px 16px;
+        font-size: 16px;
+        color: #414040;
+    }
+
+    .modal__collection button {
+        width: 350px;
+        height: 40px;
+        border-radius: 10px;
+        background: green;
+        border: 1px solid transparent;
+        color: white;
+        font-size: 16px;
+        transition: .3s;
+
+        &:hover {
+            background: none;
+            color: green;
+            border-color: green;
+            transition: .3s;
+        }
+    }
+
+}

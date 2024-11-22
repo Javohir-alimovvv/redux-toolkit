@@ -1,0 +1,79 @@
+$color1: #dd8dfc;
+$color2: #2d93f9;
+
+.header__big {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to right, $color2, $color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .header {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .header__navbar {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 50px;
+
+            .header__navbar__logo {
+                color: white;
+                font-size: 28px;
+                font-weight: 700;
+
+                &:hover {
+                    color: #e2aff6;
+                }
+            }
+
+            .header__navbar__content {
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 40px;
+
+                .header__navbar__content__item {
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 700;
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+
+                .header__navbar__content__item__gr {
+                    position: relative;
+
+                    .header__navbar__content__item__count {
+                        font-size: 14px;
+                        width: 18px;
+                        height: 18px;
+                        color: white;
+                        background: red;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        z-index: 11;
+                        top: -15px;
+                        right: -15px;
+                        border-radius: 50%;
+                    }
+                }
+                .header__navbar__content__item .active{
+                    color: red;
+                }
+            }
+        }
+    }
+}

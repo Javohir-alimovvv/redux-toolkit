@@ -1,0 +1,62 @@
+.user {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 24px;
+
+    .user__top__title {
+        color: #cb40f5;
+        font-size: 24px;
+    }
+
+    .user__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+
+        .user__content__form {
+            width: 340px;
+            height: 42px;
+            border-radius: 8px;
+            outline: none;
+            border: 1px solid #848484;
+            padding: 0px 16px;
+            font-size: 16px;
+            color: #454525;
+        }
+
+        .user__content__select {
+            width: 340px;
+            height: 42px;
+            border-radius: 8px;
+            outline: none;
+            border: 1px solid #848484;
+            padding: 0px 10px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #454525;
+        }
+        .user__content__btn{
+            width: 340px;
+            height: 42px;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            color: white;
+            background: dodgerblue;
+            font-size: 18px;
+            transition: .3s;
+            &:hover{
+                background: none;
+                color: dodgerblue;
+                border-color: dodgerblue;
+                transition: .2s;
+            }
+        }
+    }
+}
