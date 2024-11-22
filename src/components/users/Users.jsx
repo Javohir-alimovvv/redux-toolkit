@@ -59,11 +59,10 @@ const Users = ({ data }) => {
                     {modelOpen && (
                         <Model closed={closed}>
                             <div className="modal__collection">
-
                                 <label>
                                     <input
                                         type="text"
-                                        name='name'
+                                        name="user"
                                         value={edit?.user || ""}
                                         onChange={handleChange}
                                     />
@@ -72,8 +71,8 @@ const Users = ({ data }) => {
                                 <label>
                                     <input
                                         type="text"
-                                        name='profession'
-                                        value={edit?.perofessin || ""}
+                                        name="profession"
+                                        value={edit?.profession || ""}
                                         onChange={handleChange}
                                     />
                                 </label>
@@ -81,7 +80,7 @@ const Users = ({ data }) => {
                                 <label>
                                     <input
                                         type="number"
-                                        name='age'
+                                        name="age"
                                         value={edit?.age || ""}
                                         onChange={handleChange}
                                     />
@@ -89,13 +88,13 @@ const Users = ({ data }) => {
 
                                 <label>
                                     <select
-                                        name="gander"
-                                        value={edit?.gander || ""}
+                                        name="gender"
+                                        value={edit?.gender || ""}
                                         onChange={handleChange}
                                     >
-                                        <option value="">gender</option>
-                                        <option value="male">male</option>
-                                        <option value="female">female</option>
+                                        <option value="">Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
                                     </select>
                                 </label>
 

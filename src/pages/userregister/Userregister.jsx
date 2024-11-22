@@ -22,6 +22,11 @@ const Userregiter = () => {
       gender
     }
     dispatch(addToUser(nawUser))
+
+    setAge("")
+    setGender("")
+    setPerofessin("")
+    setUser("")
   }
 
   return (
